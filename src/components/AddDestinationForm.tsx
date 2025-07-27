@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useAuth } from '../contexts/AuthContext';
 
+
 const AddDestinationForm: React.FC = () => {
   const { token, user } = useAuth();
   const [form, setForm] = useState({ name: '', englishName: '', description: '', image: '', region: '', bestTime: '', heritage: '', entryFee: '', link: '' });
