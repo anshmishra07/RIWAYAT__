@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fef3c7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #f97316, #dc2626);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #ea580c, #b91c1c);
+}
+
+/* Cultural pattern overlay */
+.cultural-pattern {
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(251, 146, 60, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(239, 68, 68, 0.1) 0%, transparent 50%);
+  background-size: 100px 100px;
+}
+
+/* Gradient text animation */
+.gradient-text {
+  background: linear-gradient(45deg, #f97316, #dc2626, #f59e0b);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 3s ease-in-out infinite;
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Hover effects for cultural elements */
+.cultural-hover {
+  transition: all 0.3s ease;
+}
+
+.cultural-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(251, 146, 60, 0.2);
+}
+
+/* Custom button styles */
+.btn-cultural {
+  background: linear-gradient(135deg, #f97316, #dc2626);
+  transition: all 0.3s ease;
+}
+
+.btn-cultural:hover {
+  background: linear-gradient(135deg, #ea580c, #b91c1c);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(251, 146, 60, 0.3);
+}
+
+/* Card styles with cultural theme */
+.card-cultural {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(251, 146, 60, 0.1);
+}
+
+.card-cultural:hover {
+  box-shadow: 0 10px 25px rgba(251, 146, 60, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Cultural section backgrounds */
+.section-cultural {
+  background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+}
+
+.section-cultural-alt {
+  background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+}
