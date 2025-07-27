@@ -88,7 +88,6 @@ cd backend
 # Install backend dependencies
 npm install
 
-# Create .env file with your configuration
 ```
 
 ### 4. Environment Configuration
@@ -96,6 +95,8 @@ npm install
 Create a `.env` file in the `backend` directory:
 
 ```env
+# Create .env file with your configuration
+
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
 PORT=4000
