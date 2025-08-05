@@ -5,7 +5,7 @@ A modern web application showcasing India's rich cultural heritage through an in
 ## 🌟 Features
 
 ### Frontend Features
-- **Interactive Cultural Map**: Explore cultural events and activities across different regions of India
+- **Interactive Cultural Map**: Explore cultural events and activities across different parts of India
 - **Artisan Marketplace**: Browse and purchase authentic handcrafted products directly from artisans
 - **Creator Hub**: Platform for artists and cultural practitioners to share their work
 - **Learning Modules**: Access to workshops and educational content about traditional arts
